@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To-DO List</title>
-</head>
-<body>
-  <h1 style="color: black;">67-The DOM: Adding Nodes</h1>
-  <div class="container">
-    <h1>To-Do list</h1>
-    <input type="text" id="taskInput" placeholder="Enter a new task">
-    <button onclick="addTask()">Add Task</button>
-    <ul id="taskList"></ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-DO List</title>
+  </head>
+  <body>
+    <h1 style="color: black">67-The DOM: Adding Nodes</h1>
+    <div class="container">
+      <h1>To-Do list</h1>
+      <input type="text" id="taskInput" placeholder="Enter a new task" />
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
 
-    <script>
-      function addTask () {
-        var taskInput = document.getElementById = ('taskInput');
-        var taskList = document.getElementById = ('taskList');
-
-        // create a New list Item
-        var li = document.createElement ('li')
-        li.textContent = taskInput.value;
-      }
-    </script>
-  </div>
-</body>
+      <script>
+        function addTask() {
+          var taskInput = (document.getElementById = "taskInput");
+          var taskList = (document.getElementById = "taskList");
+          // Handle empty task
+          if (!taskInput.value.trim()) {
+            return alert("Todo list can't work");
+          }
+          // create a New list Item
+          var li = document.createElement("li");
+          li.textContent = taskInput.value;
+        }
+      </script>
+    </div>
+  </body>
 </html>
