@@ -1,7 +1,7 @@
 /* General body styling */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f9;
+  background-color: #707076;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@ body {
 }
   /* Container for the todo list */
   .container {
-    background-color: #fff;
+    background-color: #0b0b0b;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     padding: 20px;
